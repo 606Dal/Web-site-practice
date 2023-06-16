@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        
+    <!-- <input id="night_day" type="button" value="night" onclick="
+    if(document.querySelector('#night_day').value === 'night'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('#night_day').value = 'day';
+    } else {
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        document.querySelector('#night_day').value = 'night';
+    }
+    "> -->
+        <input type="button" value="night" onclick="
+            var target = document.querySelector('body');
+            if(this.value === 'night'){
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = 'day';
+            } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = 'night';
+            }
+        ">
+    
+        <!-- // <script> -->
+        <!-- //     document.write(1+1); -->
+        <!-- // </script><br> -->
+        <!-- // <input type="button" value="hi" onclick="alert('경고')"> -->
+        <!-- // <input type="text" onchange="alert('changed')"> -->
+        <!-- <input type="text" onkeydown="alert('key down!')"> -->
+         <p>   
+            <h1>Array</h1>
+            <h2>Syntax</h2>
+            <script>
+                var planet = ["수성","금성"];
+            </script>
+            <h3>get</h3>
+            <script>
+                document.write(planet[0]);
+            </script>
+            <h2>add</h2>
+            <script>
+                planet.push('지구');
+                planet.push('화성');
+            </script>
+            <h2>count</h2>
+             <script>
+                document.write(planet.length);
+            </script>
+         </p>
+         <p>
+            <h1>Loop & Array</h1>
+            <ul>
+            <script>
+                var i = 0;
+                while(i < planet.length){
+                document.write('<li>'+planet[i]+'</li>');
+                i = i + 1;
+                }
+            </script>
+            </ul>
+         </p>
+
+         <p>
+            JavaScript는 웹 페이지에서 복잡한 기능을 구현할 수 있도록 하는 스크립팅 언어 또는 프로그래밍 언어입니다. 페이지의 내용이 — 가만히 정적인 정보만 보여주는 것이 아니라 — 주기적으로 갱신되거나, 사용자와 상호작용이 가능하거나, 애니메이션이 적용된 2D/3D 그래픽을 볼 수 있다면 JavaScript가 관여하고 있을 거라고 생각해도 좋습니다. JavaScript는 표준 웹 기술이라는 케이크의 세 번째 층입니다. 다른 두 개(HTML과 CSS)는 학습장의 다른 곳에서 자세히 알아봤습니다.
+        </p>
+    </body>
+</html>
